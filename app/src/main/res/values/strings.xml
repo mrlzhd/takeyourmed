@@ -71,4 +71,15 @@
 
     <!-- Notification -->
     <string name="channel_name">Take Your Med</string>
+
+    <string-array name="diseaseList">
+
+        <item>Please select</item>
+        <item>Cataract</item>
+        <item>Glaucoma</item>
+        <item>Amblyopia</item>
+        <item>Strabismus</item>
+        <item>Uveitis</item>
+
+    </string-array>
 </resources>

@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -83,6 +84,44 @@ public class DoctorActivity extends AppCompatActivity {
                 holder.tv_drNameList.setText(model.getDocName());
                 holder.tv_drPhone.setText(model.getDocPhone());
                 holder.tv_drMail.setText(model.getDocMail());
+
+                String phoneNumber = holder.tv_drPhone.getText().toString();
+                String emailAdd = holder.tv_drMail.getText().toString();
+
+                holder.btn_callDr.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent callIntent = new Intent(Intent.ACTION_CALL);
+                        callIntent.setData(Uri.parse("tel:"+phoneNumber));
+                        startActivity(callIntent);
+
+                    }
+                });
+
+                holder.btn_emailDr.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent email = new Intent(Intent.ACTION_SEND);
+                        email.putExtra(Intent.EXTRA_EMAIL, new String[]{ emailAdd});
+                        email.putExtra(Intent.EXTRA_SUBJECT, "Eye disease");
+                        email.putExtra(Intent.EXTRA_TEXT, "Sent from TakeYourMed Application");
+
+//need this to prompts email client only
+                        email.setType("message/rfc822");
+
+                        startActivity(Intent.createChooser(email, "Choose an Email client :"));
+                    }
+                });
+
+                if (emailAdd.equals(""))
+                {
+                    holder.btn_emailDr.setVisibility(View.INVISIBLE);
+                }
+                else
+                {
+                    holder.btn_emailDr.setVisibility(View.VISIBLE);
+                }
+
 
             }
 
