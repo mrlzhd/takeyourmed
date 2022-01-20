@@ -19,7 +19,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TakeYourMed"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ui.eyedisease.ConjunctivityActivity"></activity>
+        <activity android:name=".ui.eyedisease.HordeolumActivity"></activity>
+        <activity android:name=".ui.eyedisease.UveitisActivity" />
+        <activity android:name=".ui.eyedisease.SkleritisActivity" />
+        <activity android:name=".ui.eyedisease.KeratitisActivity" />
+        <activity android:name=".ui.eyedisease.EpiskleritisActivity" />
+        <activity android:name=".ui.eyedisease.PresbiopiaActivity" />
+        <activity android:name=".ui.eyedisease.ConjunctivityActivity" />
         <activity android:name=".ui.eyedisease.CataractActivity" />
         <activity android:name=".ui.eyedisease.InformationActivity" />
         <activity android:name=".ui.eyedisease.ConsultationActivity" />

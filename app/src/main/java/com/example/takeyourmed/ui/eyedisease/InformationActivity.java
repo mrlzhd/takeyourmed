@@ -38,6 +38,52 @@ public class InformationActivity extends AppCompatActivity implements AdapterVie
             finish();
         }
 
+        if (adapterView.getItemAtPosition(i).equals("Presbiopia"))
+        {
+            Intent gotoPres = new Intent(InformationActivity.this, PresbiopiaActivity.class);
+            startActivity(gotoPres);
+            finish();
+        }
+
+        if (adapterView.getItemAtPosition(i).equals("Episkleritis"))
+        {
+            Intent gotoEpis = new Intent(InformationActivity.this, EpiskleritisActivity.class);
+            startActivity(gotoEpis);
+            finish();
+        }
+
+        if (adapterView.getItemAtPosition(i).equals("Keratitis"))
+        {
+            Intent gotoKerat = new Intent(InformationActivity.this, KeratitisActivity.class);
+            startActivity(gotoKerat);
+            finish();
+        }
+
+        if (adapterView.getItemAtPosition(i).equals("Skleritis"))
+        {
+            Intent gotoSkle = new Intent(InformationActivity.this, SkleritisActivity.class);
+            startActivity(gotoSkle);
+            finish();
+        }
+
+        if (adapterView.getItemAtPosition(i).equals("Uveitis"))
+        {
+            Intent gotoUvei = new Intent(InformationActivity.this, UveitisActivity.class);
+            startActivity(gotoUvei);
+            finish();
+        }
+
+        if (adapterView.getItemAtPosition(i).equals("Hordeolum"))
+        {
+            Intent gotoHord = new Intent(InformationActivity.this, HordeolumActivity.class);
+            startActivity(gotoHord);
+            finish();
+        }
+
+
+
+
+
     }
 
     @Override
