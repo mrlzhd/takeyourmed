@@ -17,8 +17,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TakeYourMed">
-        <activity android:name=".ui.eyedisease.CataractActivity"></activity>
+        android:theme="@style/Theme.TakeYourMed"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ui.eyedisease.ConjunctivityActivity"></activity>
+        <activity android:name=".ui.eyedisease.CataractActivity" />
         <activity android:name=".ui.eyedisease.InformationActivity" />
         <activity android:name=".ui.eyedisease.ConsultationActivity" />
         <activity android:name=".ui.doctor.AddDoctorActivity" />

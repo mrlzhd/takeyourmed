@@ -31,9 +31,9 @@ public class InformationActivity extends AppCompatActivity implements AdapterVie
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
 
-        if (adapterView.getItemAtPosition(i).equals("Cataract"))
+        if (adapterView.getItemAtPosition(i).equals("Conjunctivity"))
         {
-            Intent gotoCat = new Intent(InformationActivity.this, CataractActivity.class);
+            Intent gotoCat = new Intent(InformationActivity.this, ConjunctivityActivity.class);
             startActivity(gotoCat);
             finish();
         }

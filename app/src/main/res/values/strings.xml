@@ -71,15 +71,21 @@
 
     <!-- Notification -->
     <string name="channel_name">Take Your Med</string>
+    <string name="conjDef">Conjunctivitis is an inflammation of the conjunctiva or mucous membranes called the mucosal layer.</string>
+    <string name="conjDes">People generally refer to conjunctivitis as a contagious red eye disease. In newborns alone can suffer from conjunctivitis because newborns can get gonococcal infection in the conjunctiva from their mother when passing through the birth canal.</string>
+    <string name="conjCause">Bacterial or viral infections</string>
+    <string name="conjTreat">Please consult your nearest Eye Specialist!</string>
 
     <string-array name="diseaseList">
 
         <item>Please select</item>
-        <item>Cataract</item>
-        <item>Glaucoma</item>
-        <item>Amblyopia</item>
-        <item>Strabismus</item>
+        <item>Conjunctivity</item>
+        <item>Presbiopia</item>
+        <item>Episkleritis</item>
+        <item>Keratitis</item>
+        <item>Skleritis</item>
         <item>Uveitis</item>
+        <item>Hordeolum</item>
 
     </string-array>
 </resources>
