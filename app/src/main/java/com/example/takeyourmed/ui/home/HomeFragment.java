@@ -122,7 +122,14 @@ public class HomeFragment extends Fragment {
 
                     }
                     else if (finalI == 4) {
-                        Toast.makeText(getActivity().getApplicationContext(), "Share Picture Action", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(getActivity().getApplicationContext(), "Share Picture Action", Toast.LENGTH_SHORT).show();
+
+                        Intent img = new Intent(getContext(), OpenGalleryActivity.class);
+//                        img.setAction(android.content.Intent.ACTION_VIEW);
+//                        img.setType("image/*");
+//                        img.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//                        startActivity(img);
+                        startActivity(img);
                     }
                     else if (finalI == 5) {
                         Toast.makeText(getActivity().getApplicationContext(), "Share Log Action", Toast.LENGTH_SHORT).show();

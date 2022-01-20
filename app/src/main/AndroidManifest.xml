@@ -19,7 +19,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TakeYourMed"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ui.eyedisease.HordeolumActivity"></activity>
+        <activity android:name=".ui.home.OpenGalleryActivity"></activity>
+        <activity android:name=".ui.eyedisease.HordeolumActivity" />
         <activity android:name=".ui.eyedisease.UveitisActivity" />
         <activity android:name=".ui.eyedisease.SkleritisActivity" />
         <activity android:name=".ui.eyedisease.KeratitisActivity" />
