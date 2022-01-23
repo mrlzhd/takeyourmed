@@ -30,5 +30,13 @@ public class EyeDiseaseActivity extends AppCompatActivity {
                 startActivity(gotoInfo);
             }
         });
+
+        btn_gotoConsultation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent gotoCons = new Intent(EyeDiseaseActivity.this, ConsultationActivity.class);
+                startActivity(gotoCons);
+            }
+        });
     }
 }
