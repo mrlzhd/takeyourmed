@@ -55,6 +55,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/crd_cons02"
                 app:cardElevation="10dp"
                 app:cardCornerRadius="10dp"
                 android:layout_margin="10dp"
@@ -81,6 +82,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/crd_cons03"
                 app:cardElevation="10dp"
                 app:cardCornerRadius="10dp"
                 android:layout_margin="10dp"
@@ -106,6 +108,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/crd_cons04"
                 app:cardElevation="10dp"
                 app:cardCornerRadius="10dp"
                 android:layout_margin="10dp"
@@ -132,6 +135,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/crd_cons05"
                 app:cardElevation="10dp"
                 app:cardCornerRadius="10dp"
                 android:layout_margin="10dp"
@@ -158,6 +162,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/crd_cons06"
                 app:cardElevation="10dp"
                 app:cardCornerRadius="10dp"
                 android:layout_margin="10dp"
@@ -183,6 +188,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/crd_cons07"
                 app:cardElevation="10dp"
                 app:cardCornerRadius="10dp"
                 android:layout_margin="10dp"
@@ -208,6 +214,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/crd_cons08"
                 app:cardElevation="10dp"
                 app:cardCornerRadius="10dp"
                 android:layout_margin="10dp"
@@ -234,6 +241,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/crd_cons09"
                 app:cardElevation="10dp"
                 app:cardCornerRadius="10dp"
                 android:layout_margin="10dp"

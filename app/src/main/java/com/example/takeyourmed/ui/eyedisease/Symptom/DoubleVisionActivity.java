@@ -3,6 +3,7 @@ package com.example.takeyourmed.ui.eyedisease.Symptom;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,6 +12,7 @@ import android.widget.CompoundButton;
 import android.widget.TextView;
 
 import com.example.takeyourmed.R;
+import com.example.takeyourmed.ui.eyedisease.ResultActivity;
 
 public class DoubleVisionActivity extends AppCompatActivity {
 
@@ -188,6 +190,82 @@ public class DoubleVisionActivity extends AppCompatActivity {
 
             }
         });
+
+        btn_doubleSubmit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                if (chb_double01.isChecked() && chb_double02.isChecked() && chb_double03.isChecked())
+                {
+                    String bilanganPercent = "Cataract100";
+
+                    Intent limaPuluh = new Intent(DoubleVisionActivity.this, ResultActivity.class);
+                    limaPuluh.putExtra("50", bilanganPercent);
+                    startActivity(limaPuluh);
+                    finish();
+                }
+
+
+                else if (chb_double01.isChecked() && !chb_double02.isChecked() && !chb_double03.isChecked())
+                {
+                    String bilanganPercent = "Cataract50";
+
+                    Intent limasatu = new Intent(DoubleVisionActivity.this, ResultActivity.class);
+                    limasatu.putExtra("50", bilanganPercent);
+                    startActivity(limasatu);
+                    finish();
+                }
+
+                else if (chb_double02.isChecked() && !chb_double01.isChecked() && !chb_double03.isChecked())
+                {
+                    String bilanganPercent = "Cataract50";
+
+                    Intent limadua = new Intent(DoubleVisionActivity.this, ResultActivity.class);
+                    limadua.putExtra("50", bilanganPercent);
+                    startActivity(limadua);
+                    finish();
+                }
+
+
+
+                else if (chb_double01.isChecked() || chb_double02.isChecked() || chb_double03.isChecked())
+                {
+                    String bilanganPercent = "Cataract75";
+
+                    Intent limatempat = new Intent(DoubleVisionActivity.this, ResultActivity.class);
+                    limatempat.putExtra("50", bilanganPercent);
+                    startActivity(limatempat);
+                    finish();
+                }
+
+                else if (chb_double04.isChecked() && chb_double05.isChecked())
+                {
+                    String bilanganPercent = "Diabetic100";
+
+                    Intent diabetic100 = new Intent(DoubleVisionActivity.this, ResultActivity.class);
+                    diabetic100.putExtra("50", bilanganPercent);
+                    startActivity(diabetic100);
+                    finish();
+                }
+
+                else if (chb_double04.isChecked() || chb_double05.isChecked())
+                {
+                    String bilanganPercent = "Diabetic50";
+
+                    Intent diabetic50 = new Intent(DoubleVisionActivity.this, ResultActivity.class);
+                    diabetic50.putExtra("50", bilanganPercent);
+                    startActivity(diabetic50);
+                    finish();
+                }
+
+
+
+            }
+
+
+        });
+
+
 
 
 

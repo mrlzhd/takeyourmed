@@ -19,7 +19,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TakeYourMed"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ui.eyedisease.ResultActivity"></activity>
+        <activity android:name=".ui.eyedisease.Symptom.DifficultActivity"></activity>
+        <activity android:name=".ui.eyedisease.Symptom.ExcessiveActivity" />
+        <activity android:name=".ui.eyedisease.Symptom.ItchingActivity" />
+        <activity android:name=".ui.eyedisease.Symptom.BurningActivity" />
+        <activity android:name=".ui.eyedisease.Symptom.VisionLossActivity" />
+        <activity android:name=".ui.eyedisease.Symptom.BlurredVisionActivity" />
+        <activity android:name=".ui.eyedisease.Symptom.RedEyeActivity" />
+        <activity android:name=".ui.eyedisease.Symptom.EyePainActivity" />
+        <activity android:name=".ui.eyedisease.ResultActivity" />
         <activity android:name=".ui.eyedisease.Symptom.DoubleVisionActivity" />
         <activity android:name=".ui.eyedisease.TestCodeActivity" />
         <activity android:name=".ui.home.OpenGalleryActivity" />
