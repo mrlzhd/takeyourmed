@@ -25,6 +25,8 @@ public class VisionLossActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vision_loss);
 
+        getSupportActionBar().setTitle("Vision Loss");
+
         crd_vl01 = findViewById(R.id.crd_vl01);
         crd_vl02 = findViewById(R.id.crd_vl02);
         crd_vl03 = findViewById(R.id.crd_vl03);
@@ -64,6 +66,11 @@ public class VisionLossActivity extends AppCompatActivity {
                 crd_vl02.setVisibility(View.VISIBLE);
                 crd_vl03.setVisibility(View.VISIBLE);
                 crd_vl04.setVisibility(View.VISIBLE);
+
+                chb_vl01.setChecked(false);
+                chb_vl02.setChecked(false);
+                chb_vl03.setChecked(false);
+                chb_vl04.setChecked(false);
 
             }
         });

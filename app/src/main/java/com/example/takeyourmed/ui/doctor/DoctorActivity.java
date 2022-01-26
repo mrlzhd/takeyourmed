@@ -56,6 +56,8 @@ public class DoctorActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doctor);
 
+        getSupportActionBar().setTitle("Doctor");
+
         btn_addDr = findViewById(R.id.btn_addDr);
 
         btn_addDr.setOnClickListener(new View.OnClickListener() {

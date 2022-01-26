@@ -9,8 +9,10 @@ import android.view.View;
 
 import com.example.takeyourmed.R;
 import com.example.takeyourmed.ui.eyedisease.Symptom.BlurredVisionActivity;
+import com.example.takeyourmed.ui.eyedisease.Symptom.BurningActivity;
 import com.example.takeyourmed.ui.eyedisease.Symptom.DoubleVisionActivity;
 import com.example.takeyourmed.ui.eyedisease.Symptom.EyePainActivity;
+import com.example.takeyourmed.ui.eyedisease.Symptom.ItchingActivity;
 import com.example.takeyourmed.ui.eyedisease.Symptom.RedEyeActivity;
 import com.example.takeyourmed.ui.eyedisease.Symptom.VisionLossActivity;
 
@@ -71,6 +73,50 @@ public class ConsultationActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent gotoVision = new Intent(ConsultationActivity.this, VisionLossActivity.class);
                 startActivity(gotoVision);
+            }
+        });
+
+        crd_cons06.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent gotoBurn = new Intent(ConsultationActivity.this, BurningActivity.class);
+                startActivity(gotoBurn);
+            }
+        });
+
+        crd_cons07.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent gotoItch = new Intent(ConsultationActivity.this, ItchingActivity.class);
+                startActivity(gotoItch);
+
+            }
+        });
+
+        crd_cons08.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                String bilanganPercent = "Excessive100";
+
+                Intent cj100 = new Intent(ConsultationActivity.this, ResultActivity.class);
+                cj100.putExtra("50", bilanganPercent);
+                startActivity(cj100);
+                finish();
+            }
+        });
+
+        crd_cons09.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                String bilanganPercent = "Difficult100";
+
+                Intent cj100 = new Intent(ConsultationActivity.this, ResultActivity.class);
+                cj100.putExtra("50", bilanganPercent);
+                startActivity(cj100);
+                finish();
             }
         });
 

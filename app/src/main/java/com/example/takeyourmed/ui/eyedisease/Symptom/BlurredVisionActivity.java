@@ -25,6 +25,8 @@ public class BlurredVisionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_blurred_vision);
 
+        getSupportActionBar().setTitle("Blurred Vision");
+
         crd_blur01 = findViewById(R.id.crd_blur01);
         crd_blur02 = findViewById(R.id.crd_blur02);
         crd_blur03 = findViewById(R.id.crd_blur03);

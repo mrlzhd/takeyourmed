@@ -1,13 +1,13 @@
 package com.example.takeyourmed.ui.home;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.takeyourmed.R;
 
@@ -17,6 +17,8 @@ public class OpenGalleryActivity extends AppCompatActivity {
     Button BSelectImage;
     ImageView IVPreviewImage;
     int SELECT_PICTURE = 200;
+    private Button BshareImage;
+    Uri filepath;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +27,7 @@ public class OpenGalleryActivity extends AppCompatActivity {
 
         BSelectImage = findViewById(R.id.BSelectImage);
         IVPreviewImage = findViewById(R.id.IVPreviewImage);
+        BshareImage = findViewById(R.id.BshareImage);
 
         BSelectImage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,6 +35,25 @@ public class OpenGalleryActivity extends AppCompatActivity {
                 imageChooser();
             }
         });
+
+        BshareImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent shareIntetn = new Intent(Intent.ACTION_SEND);
+                shareIntetn.setType("image/*");
+                shareIntetn.putExtra(Intent.EXTRA_STREAM,filepath);
+
+                try {
+                    startActivity(Intent.createChooser(shareIntetn, "Share Via:"));
+                }catch (android.content.ActivityNotFoundException exception)
+                {
+                    exception.printStackTrace();
+                }
+            }
+        });
+
+
+
     }
 
     void imageChooser() {

@@ -1,29 +1,33 @@
 package com.example.takeyourmed.ui.eyedisease;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import com.example.takeyourmed.R;
 
 public class EyeDiseaseActivity extends AppCompatActivity {
 
-    private Button btn_gotoConsultation, btn_gotoInformation;
+
+    private CardView crdGotoInfo;
+    private CardView crdGotoConsultation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_eye_disease);
 
-
-        btn_gotoConsultation = findViewById(R.id.btn_gotoConsultation);
-        btn_gotoInformation = findViewById(R.id.btn_gotoInformation);
+        getSupportActionBar().setTitle("Eye Disease");
 
 
-        btn_gotoInformation.setOnClickListener(new View.OnClickListener() {
+        crdGotoInfo = findViewById(R.id.crd_gotoInfo);
+        crdGotoConsultation = findViewById(R.id.crd_gotoConsultation);
+
+
+        crdGotoInfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent gotoInfo = new Intent(EyeDiseaseActivity.this, InformationActivity.class);
@@ -31,12 +35,14 @@ public class EyeDiseaseActivity extends AppCompatActivity {
             }
         });
 
-        btn_gotoConsultation.setOnClickListener(new View.OnClickListener() {
+        crdGotoConsultation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent gotoCons = new Intent(EyeDiseaseActivity.this, ConsultationActivity.class);
                 startActivity(gotoCons);
             }
         });
+
+
     }
 }

@@ -133,7 +133,7 @@ public class LoginActivity extends AppCompatActivity {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         LoggedInUser userDetail = snapshot.getValue(LoggedInUser.class);
-                        String name = userDetail.getUsername();
+                        String name = userDetail.getUserId();
                         Intent i = new Intent(getApplicationContext(), MainActivity.class);
                         CustomToast.createToast(getApplicationContext(), "Login Successful",
                                 false);

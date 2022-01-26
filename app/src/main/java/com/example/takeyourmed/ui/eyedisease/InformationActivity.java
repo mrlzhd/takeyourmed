@@ -19,6 +19,8 @@ public class InformationActivity extends AppCompatActivity implements AdapterVie
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_information);
+        getSupportActionBar().setTitle("Information");
+
 
         spn_diseaseList = findViewById(R.id.spn_diseaseList);
 

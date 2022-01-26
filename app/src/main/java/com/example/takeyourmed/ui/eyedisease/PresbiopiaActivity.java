@@ -12,5 +12,7 @@ public class PresbiopiaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_presbiopia);
+
+        getSupportActionBar().setTitle("Presbiopia");
     }
 }

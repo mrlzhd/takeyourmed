@@ -26,6 +26,8 @@ public class DoubleVisionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_double_vision);
 
+        getSupportActionBar().setTitle("Double Vision");
+
         tv_double01 = findViewById(R.id.tv_double01);
         tv_double02 = findViewById(R.id.tv_double02);
         tv_double03 = findViewById(R.id.tv_double03);

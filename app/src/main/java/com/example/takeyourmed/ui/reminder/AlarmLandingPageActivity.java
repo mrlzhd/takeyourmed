@@ -13,8 +13,12 @@ import com.example.takeyourmed.R;
 
 public final class AlarmLandingPageActivity extends AppCompatActivity {
 
+
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
+
+        getSupportActionBar().setTitle("Reminder");
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             getWindow().setFlags(

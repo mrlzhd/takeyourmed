@@ -12,5 +12,7 @@ public class SkleritisActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_skleritis);
+
+        getSupportActionBar().setTitle("Skleritis");
     }
 }

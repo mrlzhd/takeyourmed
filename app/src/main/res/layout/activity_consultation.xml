@@ -26,61 +26,6 @@
 
 
 
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/crd_cons01"
-                app:cardElevation="10dp"
-                app:cardCornerRadius="10dp"
-                android:layout_margin="10dp"
-                android:padding="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:gravity="center"
-                    android:layout_height="match_parent">
-                    <TextView
-                        android:layout_margin="10dp"
-                        android:textColor="#000000"
-                        android:textSize="18sp"
-                        android:text="Double Vision"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-
-                </LinearLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/crd_cons02"
-                app:cardElevation="10dp"
-                app:cardCornerRadius="10dp"
-                android:layout_margin="10dp"
-                android:padding="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <LinearLayout
-                    android:gravity="center"
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <TextView
-                        android:layout_margin="10dp"
-                        android:textColor="#000000"
-                        android:textSize="18sp"
-                        android:text="Eye Pain"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-
-                </LinearLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
             <androidx.cardview.widget.CardView
                 android:id="@+id/crd_cons03"
                 app:cardElevation="10dp"
@@ -107,6 +52,8 @@
 
             </androidx.cardview.widget.CardView>
 
+
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/crd_cons04"
                 app:cardElevation="10dp"
@@ -126,6 +73,33 @@
                         android:textColor="#000000"
                         android:textSize="18sp"
                         android:text="Blurred Vision"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/crd_cons01"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_margin="10dp"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:text="Double Vision"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
 
@@ -187,6 +161,35 @@
 
             </androidx.cardview.widget.CardView>
 
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/crd_cons09"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_margin="10dp"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:text="Difficult to see in dark or low light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/crd_cons07"
                 app:cardElevation="10dp"
@@ -241,7 +244,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/crd_cons09"
+                android:id="@+id/crd_cons02"
                 app:cardElevation="10dp"
                 app:cardCornerRadius="10dp"
                 android:layout_margin="10dp"
@@ -258,7 +261,7 @@
                         android:layout_margin="10dp"
                         android:textColor="#000000"
                         android:textSize="18sp"
-                        android:text="Difficult to see in dark or low light"
+                        android:text="Eye Pain"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
 

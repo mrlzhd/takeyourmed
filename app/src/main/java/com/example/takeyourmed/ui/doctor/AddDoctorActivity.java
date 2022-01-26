@@ -35,6 +35,8 @@ public class AddDoctorActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_doctor);
 
+        getSupportActionBar().setTitle("Add Doctor");
+
         et_drNameSubmit = findViewById(R.id.et_drNameSubmit);
         et_drPhoneSubmit = findViewById(R.id.et_drPhoneSubmit);
         et_drMailSubmit = findViewById(R.id.et_drMailSubmit);

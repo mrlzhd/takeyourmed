@@ -25,6 +25,8 @@ public class RedEyeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_red_eye);
 
+        getSupportActionBar().setTitle("Red Eye");
+
         crd_redEye01 = findViewById(R.id.crd_redEye01);
         crd_redEye02 = findViewById(R.id.crd_redEye02);
         crd_redEye03 = findViewById(R.id.crd_redEye03);

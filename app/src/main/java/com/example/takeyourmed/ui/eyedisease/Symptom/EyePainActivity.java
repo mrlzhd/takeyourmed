@@ -25,6 +25,8 @@ public class EyePainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_eye_pain);
 
+        getSupportActionBar().setTitle("Eye Pain");
+
         crd_eyePain01 = findViewById(R.id.crd_eyePain01);
         crd_eyePain02 = findViewById(R.id.crd_eyePain02);
         crd_eyePain03 = findViewById(R.id.crd_eyePain03);
